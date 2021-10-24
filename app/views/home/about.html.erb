@@ -1,1 +1,24 @@
 <h1>It's Zeven Dutch !!!</h1>
+	<%= @about_me %>
+<br/>
+<br/>
+
+
+<% if not user_signed_in? %>
+	<table class="table table-sm table-striped table-bordered" style="width: 18rem;">
+		<thead class="table-dark">
+			<td>User</td>
+			<td>Password</td>
+		</thead>
+		<tbody>
+			<tr>
+				<td>superstar@ymail.com</td>
+				<td>qwerty</td>
+			</tr>
+			<tr>
+				<td>hitman@ymail.com</td>
+				<td>polkmn</td>			
+			</tr>	
+		</tbody>
+	</table>
+<% end %>
